@@ -2282,3 +2282,1086 @@ Errno::EISDIR (Is a directory - db):
 Rendered rescues/_trace (62.2ms)
 Rendered rescues/_request_and_response (0.5ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:07:42) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:07:42) [GET]
+Rendering browser/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:07:42) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:11:37) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:11:37) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:11:37) [GET]
+Rendering browser/index
+
+ActionView::TemplateError (undefined method `directory?' for "app":String) on line #3 of app/views/browser/index.html.erb:
+1: <h1>Arquivos</h1>
+2: <% for file in @files %>
+3:   <% if file.directory? %>
+4:     /<%= file %><br/>
+5:   <% else %>
+6:     <%= link_to file, "/editor/?file=" + file, :target => "editor" %><br/>
+
+    app/views/browser/index.html.erb:3
+    app/views/browser/index.html.erb:2:in `each'
+    app/views/browser/index.html.erb:2
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:11:53) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:11:53) [GET]
+Rendering browser/index
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:11:53) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (138.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:11:55) [GET]
+  Parameters: {"file"=>"Rakefile"}
+Rendering editor/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/editor/?file=Rakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:11:56) [GET]
+  Parameters: {"file"=>"README"}
+Rendering editor/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/editor/?file=README]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:12:11) [GET]
+  Parameters: {"file"=>"README"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=README]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:12:58) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:12:58) [GET]
+Rendering browser/index
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:12:58) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (138.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:13:01) [GET]
+  Parameters: {"folder"=>"app"}
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=app]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:13:09) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:13:09) [GET]
+Rendering browser/index
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:13:09) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:15:12) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:15:12) [GET]
+Rendering browser/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:15:12) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:15:30) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:15:30) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:15:30) [GET]
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:15:33) [GET]
+  Parameters: {"folder"=>"app"}
+Rendering browser/index
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=app]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:15:49) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:15:49) [GET]
+Rendering browser/index
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:15:49) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:15:51) [GET]
+  Parameters: {"folder"=>"./app"}
+Rendering browser/index
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=./app]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:15:53) [GET]
+  Parameters: {"folder"=>"././app/helpers"}
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=././app/helpers]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:15:55) [GET]
+  Parameters: {"file"=>"./././app/helpers/browser_helper.rb"}
+Rendering editor/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/editor/?file=./././app/helpers/browser_helper.rb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:17:16) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:17:16) [GET]
+Rendering browser/index
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:17:17) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:17:19) [GET]
+  Parameters: {"folder"=>"./app"}
+Rendering browser/index
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=./app]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:17:20) [GET]
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:17:26) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:17:27) [GET]
+Rendering browser/index
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:17:27) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:17:33) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:17:33) [GET]
+Rendering browser/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:17:33) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:17:36) [GET]
+  Parameters: {"folder"=>"./app"}
+Rendering browser/index
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=./app]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:17:37) [GET]
+  Parameters: {"folder"=>"././app/models"}
+Rendering browser/index
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=././app/models]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:17:39) [GET]
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:17:40) [GET]
+  Parameters: {"folder"=>"./public"}
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=./public]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:17:41) [GET]
+  Parameters: {"file"=>"././public/500.html"}
+Rendering editor/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/editor/?file=././public/500.html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:18:00) [GET]
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:18:02) [GET]
+  Parameters: {"folder"=>"./log"}
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=./log]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:18:03) [GET]
+  Parameters: {"file"=>"././log/development.log"}
+Rendering editor/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=././log/development.log]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:18:04) [GET]
+  Parameters: {"file"=>"././log/production.log"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=././log/production.log]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:18:05) [GET]
+  Parameters: {"file"=>"././log/server.log"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=././log/server.log]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:18:06) [GET]
+  Parameters: {"file"=>"././log/test.log"}
+Rendering editor/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/editor/?file=././log/test.log]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:18:07) [GET]
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:18:08) [GET]
+  Parameters: {"folder"=>"./test"}
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=./test]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:18:10) [GET]
+  Parameters: {"folder"=>"././test/functional"}
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=././test/functional]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:18:11) [GET]
+  Parameters: {"file"=>"./././test/functional/browser_controller_test.rb"}
+Rendering editor/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/editor/?file=./././test/functional/browser_controller_test.rb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:19:02) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:19:03) [GET]
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:19:03) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:19:06) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/editor/?file=./Rakefile]
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:19:07) [GET]
+  Parameters: {"file"=>"./README"}
+Rendering editor/index
+Completed in 11ms (View: 2, DB: 2) | 200 OK [http://localhost/editor/?file=./README]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:19:14) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (3.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:19:14) [GET]
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 4) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:19:14) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/editor_controller.rb:3:in `read'
+  app/controllers/editor_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:20:14) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:20:14) [GET]
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:20:14) [GET]
+
+ActionView::MissingTemplate (Missing layout layouts/welcome.erb in view path app/views):
+  app/controllers/editor_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:20:24) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:20:24) [GET]
+
+ActionView::MissingTemplate (Missing layout layouts/editor/welcome.erb in view path app/views):
+  app/controllers/editor_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:20:24) [GET]
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:20:47) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:20:47) [GET]
+
+ActionView::MissingTemplate (Missing layout layouts/editor/welcome.erb in view path app/views):
+  app/controllers/editor_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:20:47) [GET]
+Rendering browser/index
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:21:11) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:21:11) [GET]
+
+ActionView::MissingTemplate (Missing layout layouts/editor/welcome.erb in view path app/views):
+  app/controllers/editor_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:21:11) [GET]
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:21:17) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:21:17) [GET]
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:21:17) [GET]
+
+ActionView::MissingTemplate (Missing layout layouts/editor/welcome.html in view path app/views):
+  app/controllers/editor_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:21:22) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:21:22) [GET]
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:21:23) [GET]
+
+ActionView::MissingTemplate (Missing layout layouts/editor/welcome.html.erb in view path app/views):
+  app/controllers/editor_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:21:47) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:21:47) [GET]
+Rendering editor/welcome
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:21:47) [GET]
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:21:52) [GET]
+  Parameters: {"folder"=>"./config"}
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=./config]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:21:54) [GET]
+  Parameters: {"file"=>"././config/boot.rb"}
+Rendering editor/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/editor/?file=././config/boot.rb]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:22:10) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:22:10) [GET]
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:22:10) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:22:12) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/editor/?file=./Rakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:22:15) [GET]
+  Parameters: {"folder"=>"./config"}
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=./config]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:22:16) [GET]
+  Parameters: {"file"=>"././config/environment.rb"}
+Rendering editor/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/editor/?file=././config/environment.rb]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:22:29) [GET]
+  Parameters: {"file"=>"././config/routes.rb"}
+Rendering editor/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/editor/?file=././config/routes.rb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 01:24:15) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:24:15) [GET]
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:24:15) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:24:17) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/editor/?file=./Rakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 01:24:26) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n\r\nVamos ver\r\n"}
+
+ActionController::UnknownAction (No action responded to save_file. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

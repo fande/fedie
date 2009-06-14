@@ -1,9 +1,17 @@
 <h1>Arquivos</h1>
 <% for file in @files %>
-  <%= link_to file, "/editor/?file=" + file, :target => "editor" %><br/>
+  <% if File.directory? file %>
+    <b><%= link_to file, "/browser/?folder=" + file %></b><br/>
+  <% else %>
+    <%= link_to file, "/editor/?file=" + file, :target => "editor" %><br/>
+  <% end %>
 <% end %>
 
----<br/>
+<% if params[:folder]%>
+  <%= link_to "Up", "/browser/" %>
+<% end %>
+<br/>
+<hr/>
 Nova Pasta<br/>
 Novo Arquivo<br/>
 Enviar Arquivo<br/>

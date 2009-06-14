@@ -1,5 +1,15 @@
 class BrowserController < ApplicationController
   def index
-    @files = Dir.glob('*')
+    folder = params[:folder] ? "./#{params[:folder]}/" : "./"
+    @files = Dir.glob( folder + '*')
+  end
+  
+  def new_folder
+  end
+  
+  def new_file
+  end
+  
+  def upload
   end
 end
