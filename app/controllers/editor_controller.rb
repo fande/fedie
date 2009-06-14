@@ -8,7 +8,14 @@ class EditorController < ApplicationController
   end
   
   def save_file
-    @file = File.open params[:file_name]
-    
+      # nao esta salvando direito...
+    if ! params[:file].blank?
+      @file = File.open(params[:file_name], File::WRONLY|File::TRUNC|File::CREAT)
+      @file.puts params[:file]
+    else
+      flash[:notice] = "Nao salvou direito"
+    end
+    redirect_to :action => :index, :file => params[:file_name]
+  end
 end
 

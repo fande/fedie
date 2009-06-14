@@ -8,3 +8,5 @@ require 'rake/testtask'
 require 'rake/rdoctask'
 
 require 'tasks/rails'
+
+#agora rolou tem bug...a

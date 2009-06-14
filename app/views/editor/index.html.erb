@@ -7,7 +7,7 @@
 </SCRIPT>
 <BODY ONLOAD="mobwrite.share('<%= params[:file] %>');">
 <h1>Editando arquivo: <i><%= params[:file] %></i></h1>
-
+<%= flash[:notice] %><br/>
 <form action="/editor/save_file">
 <input type="hidden" name="file_name" id="file_name" value="<%= params[:file] %>" />
 <textarea id="<%= params[:file] %>" name="file" style="width: 800px; height: 400px">

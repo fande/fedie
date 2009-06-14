@@ -12,6 +12,12 @@
 <% end %>
 <br/>
 <hr/>
-Nova Pasta<br/>
-Novo Arquivo<br/>
+<form action="/browser/new_file">
+  <input type="text" name="file_name" value="novo arquivo" style="width: 80px">
+  <input type="submit" value="Ok">
+</form>
+<form action="/browser/new_folder">
+  <input type="text" name="folder_name" value="nova pasta" style="width: 80px">
+  <input type="submit" value="Ok">
+</form>
 Enviar Arquivo<br/>
