@@ -4511,3 +4511,511 @@ Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=./
 Processing BrowserController#index (for ::1 at 2009-06-14 01:55:02) [GET]
 Rendering browser/index
 Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:56:14) [GET]
+  Parameters: {"folder"=>"./app"}
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=./app]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:56:16) [GET]
+  Parameters: {"folder"=>"././app/controllers"}
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=././app/controllers]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:56:17) [GET]
+  Parameters: {"file"=>"./././app/controllers/editor_controller.rb"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=./././app/controllers/editor_controller.rb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:56:23) [GET]
+  Parameters: {"file"=>"./././app/controllers/main_controller.rb"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=./././app/controllers/main_controller.rb]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:56:25) [GET]
+Rendering browser/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:56:27) [GET]
+  Parameters: {"file"=>"./Mais um"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=./Mais%20um]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:56:31) [GET]
+  Parameters: {"folder"=>"./script"}
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=./script]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:56:33) [GET]
+  Parameters: {"file"=>"././script/console"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=././script/console]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 01:56:38) [GET]
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:56:39) [GET]
+  Parameters: {"file"=>"./Teste.erb"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=./Teste.erb]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:56:42) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=./Rakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 01:56:53) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:56:53) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 01:57:01) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:57:01) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 01:57:34) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'"}
+
+NoMethodError (undefined method `<' for false:FalseClass):
+  app/controllers/editor_controller.rb:12:in `save_file'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:58:00) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=./Rakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 01:58:03) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'"}
+
+NoMethodError (undefined method `lenght' for #<String:0x25d1900>):
+  app/controllers/editor_controller.rb:12:in `save_file'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:58:11) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=./Rakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 01:58:12) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'"}
+
+NoMethodError (undefined method `<' for false:FalseClass):
+  app/controllers/editor_controller.rb:12:in `save_file'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:58:35) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=./Rakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 01:58:39) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:58:39) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 01:59:33) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 01:59:33) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 01:59:56) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'"}
+
+IOError (not opened for writing):
+  app/controllers/editor_controller.rb:14:in `write'
+  app/controllers/editor_controller.rb:14:in `puts'
+  app/controllers/editor_controller.rb:14:in `save_file'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:00:11) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=./Rakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:00:21) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"\r\nTEste"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%0D%0ATEste]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:00:21) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:00:25) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=./Rakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:00:29) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:00:29) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:00:39) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n\r\nteste"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A%0D%0Ateste]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:00:39) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:00:46) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n\r\nteste"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A%0D%0Ateste]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:00:46) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:00:50) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n\r\nteste"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A%0D%0Ateste]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:00:50) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:00:58) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n\r\nteste\r\n"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A%0D%0Ateste%0D%0A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:00:58) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:01:12) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n\r\nLento demais\r\n"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A%0D%0ALento+demais%0D%0A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:01:12) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:01:28) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n\r\nLento demais\r\n"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A%0D%0ALento+demais%0D%0A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:01:28) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:01:38) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n\r\nLento demais\r\n\r\n"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A%0D%0ALento+demais%0D%0A%0D%0A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:01:38) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:01:51) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n\r\nnao entendo....\r\n"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A%0D%0Anao+entendo....%0D%0A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:01:51) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:02:41) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:02:41) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:02:45) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:02:45) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:02:47) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:02:48) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 02:02:59) [GET]
+  Parameters: {"file_name"=>"./Rakefile", "file"=>"# Add your own tasks in files placed in lib/tasks ending in .rake,\r\n# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\r\n\r\nrequire(File.join(File.dirname(__FILE__), 'config', 'boot'))\r\n\r\nrequire 'rake'\r\nrequire 'rake/testtask'\r\nrequire 'rake/rdoctask'\r\n\r\nrequire 'tasks/rails'\r\n"}
+Redirected to http://localhost:3000/editor?file=.%2FRakefile
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=.%2FRakefile&file=%23+Add+your+own+tasks+in+files+placed+in+lib%2Ftasks+ending+in+.rake%2C%0D%0A%23+for+example+lib%2Ftasks%2Fcapistrano.rake%2C+and+they+will+automatically+be+available+to+Rake.%0D%0A%0D%0Arequire%28File.join%28File.dirname%28__FILE__%29%2C+%27config%27%2C+%27boot%27%29%29%0D%0A%0D%0Arequire+%27rake%27%0D%0Arequire+%27rake%2Ftesttask%27%0D%0Arequire+%27rake%2Frdoctask%27%0D%0A%0D%0Arequire+%27tasks%2Frails%27%0D%0A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 02:02:59) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]

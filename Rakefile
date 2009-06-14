@@ -9,4 +9,7 @@ require 'rake/rdoctask'
 
 require 'tasks/rails'
 
-#agora rolou tem bug...a
+teste
+emais
+
+

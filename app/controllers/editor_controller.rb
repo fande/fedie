@@ -9,8 +9,8 @@ class EditorController < ApplicationController
   
   def save_file
       # nao esta salvando direito...
-    if ! params[:file].blank?
-      @file = File.open(params[:file_name], File::WRONLY|File::TRUNC|File::CREAT)
+    if ! (params[:file].length < 1)
+      @file = File.open(params[:file_name], File::WRONLY|File::CREAT)
       @file.puts params[:file]
     else
       flash[:notice] = "Nao salvou direito"
