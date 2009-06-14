@@ -1,0 +1,16 @@
+	<%= javascript_include_tag "compressed_form" %>
+	<%= javascript_include_tag "codemirror/codemirror" %>
+	<%= javascript_include_tag "codemirror/mirrorframe" %>
+	<%= stylesheet_link_tag 'codemirror/docs' %>
+<SCRIPT>
+  mobwrite.syncGateway = 'http://mobwrite3.appspot.com/scripts/q.py';
+</SCRIPT>
+<BODY ONLOAD="mobwrite.share('<%= params[:file] %>');">
+<h1>Editando arquivo: <i><%= params[:file] %></i></h1>
+
+<textarea id="<%= params[:file] %>" name="file" style="width: 800px; height: 800px">
+<%= @file %>
+</textarea>
+
+Botao Salvar Alterações
+

@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: fedie_development
+  pool: 5
+  username: user
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: fedie_test
+  pool: 5
+  username: user
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: fedie_production
+  pool: 5
+  username: user
+  password:

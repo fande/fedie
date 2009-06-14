@@ -1,0 +1,9 @@
+<h1>Arquivos</h1>
+<% for file in @files %>
+  <%= link_to file, "/editor/?file=" + file, :target => "editor" %><br/>
+<% end %>
+
+---<br/>
+Nova Pasta<br/>
+Novo Arquivo<br/>
+Enviar Arquivo<br/>
