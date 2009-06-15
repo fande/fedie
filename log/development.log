@@ -5019,3 +5019,2395 @@ Processing EditorController#index (for ::1 at 2009-06-14 02:02:59) [GET]
   Parameters: {"file"=>"./Rakefile"}
 Rendering editor/index
 Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=.%2FRakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:33:52) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 25ms (View: 16, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:33:52) [GET]
+Rendering editor/welcome
+Completed in 19ms (View: 11, DB: 2) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:33:52) [GET]
+Rendering browser/index
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:33:55) [GET]
+  Parameters: {"folder"=>"./app"}
+Rendering browser/index
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=./app]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:33:56) [GET]
+  Parameters: {"folder"=>"././app/controllers"}
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=././app/controllers]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:33:57) [GET]
+  Parameters: {"file"=>"./././app/controllers/browser_controller.rb"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.9ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:33:58) [GET]
+  Parameters: {"file"=>"./././app/controllers/editor_controller.rb"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:33:59) [GET]
+  Parameters: {"file"=>"./././app/controllers/main_controller.rb"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:33:59) [GET]
+Rendering browser/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:37:08) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:37:08) [GET]
+
+NameError (uninitialized constant BrowserController::Browser):
+  app/controllers/browser_controller.rb:31:in `get_dir_contents'
+  app/controllers/browser_controller.rb:9:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:37:08) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:38:24) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for ::1 at 2009-06-14 21:38:24) [GET]
+
+NameError (uninitialized constant BrowserController::COMMISSIE):
+  app/controllers/browser_controller.rb:3
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:38:24) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:38:33) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:38:33) [GET]
+
+NameError (uninitialized constant BrowserController::Browser):
+  app/controllers/browser_controller.rb:31:in `get_dir_contents'
+  app/controllers/browser_controller.rb:9:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:38:33) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:39:27) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:39:27) [GET]
+Rendering editor/welcome
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:39:27) [GET]
+Rendering browser/index
+
+ActionView::TemplateError (can't convert Array into String) on line #3 of app/views/browser/index.html.erb:
+1: <h1>Arquivos</h1>
+2: <% for file in @files %>
+3:   <% if File.directory? file %>
+4:     <b><%= link_to file, "/browser/?folder=" + file %></b><br/>
+5:   <% else %>
+6:     <%= link_to file, "/editor/?file=" + file, :target => "editor" %><br/>
+
+    app/views/browser/index.html.erb:3:in `directory?'
+    app/views/browser/index.html.erb:3
+    app/views/browser/index.html.erb:2:in `each'
+    app/views/browser/index.html.erb:2
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.7ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:40:14) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:40:14) [GET]
+Rendering browser/index
+
+ActionView::TemplateError (undefined method `name' for ["images", "javascripts", "stylesheets"]:Array) on line #3 of app/views/browser/index.html.erb:
+1: <h1>Arquivos</h1>
+2: <% for file in @files %>
+3:   <% if File.directory? file.name %>
+4:     <b><%= link_to file, "/browser/?folder=" + file %></b><br/>
+5:   <% else %>
+6:     <%= link_to file, "/editor/?file=" + file, :target => "editor" %><br/>
+
+    app/views/browser/index.html.erb:3
+    app/views/browser/index.html.erb:2:in `each'
+    app/views/browser/index.html.erb:2
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:40:14) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:40:50) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:40:50) [GET]
+Rendering browser/index
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:40:50) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:41:26) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:41:26) [GET]
+Rendering browser/index
+
+ActionView::TemplateError (undefined local variable or method `file' for #<ActionView::Base:0x22c5dc4>) on line #3 of app/views/browser/index.html.erb:
+1: <h1>Pastas</h1>
+2: <% for f in @folders %>
+3:     <b><%= link_to file, "/browser/?folder=" + file %></b><br/>
+4: <% end %>
+5: <h1>Arquivos</h1>
+6: <% for file in @files %>
+
+    app/views/browser/index.html.erb:3
+    app/views/browser/index.html.erb:2:in `each'
+    app/views/browser/index.html.erb:2
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (153.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:41:27) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:42:00) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:01) [GET]
+Rendering browser/index
+Completed in 27ms (View: 8, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:42:01) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:04) [GET]
+  Parameters: {"folder"=>"images"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=images]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:42:07) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:42:07) [GET]
+  Parameters: {"file"=>"./././app/controllers/main_controller.rb"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:07) [GET]
+Rendering browser/index
+Completed in 21ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:08) [GET]
+  Parameters: {"folder"=>"javascripts"}
+Rendering browser/index
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=javascripts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:10) [GET]
+  Parameters: {"folder"=>"codemirror"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=codemirror]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:12) [GET]
+Rendering browser/index
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:13) [GET]
+  Parameters: {"folder"=>"stylesheets"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=stylesheets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:15) [GET]
+Rendering browser/index
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:17) [GET]
+  Parameters: {"folder"=>".DS_Store"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=.DS_Store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:19) [GET]
+Rendering browser/index
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:20) [GET]
+  Parameters: {"folder"=>"422.html"}
+Rendering browser/index
+Completed in 18ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=422.html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:42:22) [GET]
+Rendering browser/index
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:47:23) [GET]
+  Parameters: {"folder"=>"./config"}
+Rendering browser/index
+Completed in 25ms (View: 7, DB: 0) | 200 OK [http://localhost/browser/?folder=./config]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:47:25) [GET]
+  Parameters: {"file"=>"././config/database.yml"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (136.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:47:27) [GET]
+Rendering browser/index
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:47:28) [GET]
+  Parameters: {"file"=>"./Rakefile"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:47:30) [GET]
+  Parameters: {"file"=>"./README"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:47:37) [GET]
+  Parameters: {"folder"=>"./config"}
+Rendering browser/index
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=./config]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:47:38) [GET]
+  Parameters: {"file"=>"././config/database.yml"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (138.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:48:19) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:48:20) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:48:20) [GET]
+
+NameError (uninitialized constant BrowserController::BASE_URL):
+  app/controllers/browser_controller.rb:29:in `get_dir_contents'
+  app/controllers/browser_controller.rb:8:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:48:53) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:48:53) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:48:53) [GET]
+Rendering browser/index
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:48:55) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie"}
+Rendering browser/index
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:48:58) [GET]
+Rendering browser/index
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:49:00) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie"}
+Rendering browser/index
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:49:48) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 83ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:49:48) [GET]
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:49:48) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:50:19) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:50:20) [GET]
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:50:38) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:50:38) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:50:38) [GET]
+Rendering browser/index
+Completed in 18ms (View: 1, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:52:47) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:52:47) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:52:47) [GET]
+Rendering browser/index
+Completed in 24ms (View: 7, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:52:49) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:53:10) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:53:11) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie_estragado"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie_estragado]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:53:38) [GET]
+Rendering browser/index
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:54:31) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:54:31) [GET]
+Rendering browser/index
+Completed in 25ms (View: 8, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:54:31) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:54:33) [GET]
+  Parameters: {"file_name"=>"/"}
+Rendering browser/index
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?file_name=%2F]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:54:46) [GET]
+  Parameters: {"file_name"=>"/"}
+Rendering browser/index
+Completed in 25ms (View: 8, DB: 0) | 200 OK [http://localhost/browser/?file_name=%2F]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:54:48) [GET]
+  Parameters: {"folder"=>"/"}
+Rendering browser/index
+Completed in 22ms (View: 4, DB: 0) | 200 OK [http://localhost/browser/?folder=%2F]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:54:52) [GET]
+  Parameters: {"folder"=>"//Fande"}
+Rendering browser/index
+Completed in 40ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=//Fande]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:54:54) [GET]
+  Parameters: {"folder"=>"//Fande/Clientes"}
+Rendering browser/index
+Completed in 33ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=//Fande/Clientes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:54:56) [GET]
+  Parameters: {"folder"=>"//Fande/Clientes/Hugo"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=//Fande/Clientes/Hugo]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:54:57) [GET]
+Rendering browser/index
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:54:59) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/Rakefile"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:55:02) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/README"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:55:03) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/config"}
+Rendering browser/index
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/config]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:55:05) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/config/boot.rb"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:55:41) [GET]
+  Parameters: {"folder"=>"/Users/"}
+Rendering browser/index
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=%2FUsers%2F]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:55:43) [GET]
+  Parameters: {"folder"=>"/Users//ftp"}
+Rendering browser/index
+Completed in 44ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users//ftp]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:55:44) [GET]
+  Parameters: {"folder"=>"/Users//ftp/VirtualHosts"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users//ftp/VirtualHosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:55:45) [GET]
+Rendering browser/index
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:56:26) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:56:26) [GET]
+Rendering browser/index
+Completed in 25ms (View: 8, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:56:26) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:56:28) [GET]
+  Parameters: {"folder"=>"/"}
+Rendering browser/index
+Completed in 21ms (View: 3, DB: 0) | 200 OK [http://localhost/browser/?folder=/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:56:34) [GET]
+  Parameters: {"folder"=>"//Facul"}
+Rendering browser/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/browser/?folder=//Facul]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:56:35) [GET]
+  Parameters: {"folder"=>"//Facul/2009-1"}
+Rendering browser/index
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=//Facul/2009-1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:58:55) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:58:55) [GET]
+Rendering browser/index
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:58:55) [GET]
+Rendering editor/welcome
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for ::1 at 2009-06-14 21:58:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/incons/folder.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for ::1 at 2009-06-14 21:58:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/incons/file.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for ::1 at 2009-06-14 21:58:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/incons/folder.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for ::1 at 2009-06-14 21:58:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/incons/file.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 21:59:18) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 21:59:19) [GET]
+Rendering browser/index
+Completed in 101ms (View: 84, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:59:19) [GET]
+Rendering editor/welcome
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:59:24) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/Rakefile"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:59:26) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/README"}
+
+NameError (uninitialized constant EditorController::ROOT):
+  app/controllers/editor_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 21:59:52) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/Rakefile"}
+Rendering editor/index
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/Rakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:00:07) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:00:08) [GET]
+Rendering browser/index
+Completed in 21ms (View: 4, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:00:08) [GET]
+Rendering editor/welcome
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:00:10) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/Rakefile"}
+Rendering editor/index
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/Rakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:02:25) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:02:25) [GET]
+Rendering editor/welcome
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:02:25) [GET]
+Rendering browser/index
+Completed in 27ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:02:29) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/public"}
+Rendering browser/index
+Completed in 21ms (View: 4, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/public]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:02:31) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/public/images"}
+Rendering browser/index
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/public/images]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:02:33) [GET]
+  Parameters: {"folder"=>"/"}
+Rendering browser/index
+Completed in 27ms (View: 9, DB: 0) | 200 OK [http://localhost/browser/?folder=/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:15:23) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:15:23) [GET]
+Rendering browser/index
+Completed in 100ms (View: 83, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:15:23) [GET]
+Rendering editor/welcome
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:18:13) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:18:13) [GET]
+Rendering browser/index
+
+ActionView::TemplateError (undefined local variable or method `file' for #<ActionView::Base:0x254c278>) on line #7 of app/views/browser/index.html.erb:
+4:     <input type="submit" value="Ok">
+5:   </form>
+6: <h1>Arquivos</h1>
+7:     <%= image_tag("icons/folder.png")%><b><%= link_to "..", "/browser/?folder=#{File.dirname(File.dirname(file))}" %></b><br/>
+8: <% for file in @files %>
+9:   <% if File.directory? file %>
+10:     <%= image_tag("icons/folder.png")%><b><%= link_to File.basename(file), "/browser/?folder=" + file %></b><br/>
+
+    app/views/browser/index.html.erb:7
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:18:14) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:18:48) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:18:48) [GET]
+Rendering browser/index
+
+ActionView::TemplateError (can't convert nil into String) on line #7 of app/views/browser/index.html.erb:
+4:     <input type="submit" value="Ok">
+5:   </form>
+6: <h1>Arquivos</h1>
+7:     <%= image_tag("icons/folder.png")%><b><%= link_to "..", "/browser/?folder=#{File.dirname(File.dirname(params[:folder]))}" %></b><br/>
+8: <% for file in @files %>
+9:   <% if File.directory? file %>
+10:     <%= image_tag("icons/folder.png")%><b><%= link_to File.basename(file), "/browser/?folder=" + file %></b><br/>
+
+    app/views/browser/index.html.erb:7:in `dirname'
+    app/views/browser/index.html.erb:7
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (153.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:18:48) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:20:53) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:20:53) [GET]
+Rendering browser/index
+
+ActionView::TemplateError (can't convert nil into String) on line #7 of app/views/browser/index.html.erb:
+4:     <input type="submit" value="Ok">
+5:   </form>
+6: <h1>Arquivos</h1>
+7:     <%= image_tag("icons/folder.png")%><b><%= link_to "..", "/browser/?folder=#{File.dirname(File.dirname(params[:folder]))}" %></b><br/>
+8: <% for file in @files %>
+9:   <% if File.directory? file %>
+10:     <%= image_tag("icons/folder.png")%><b><%= link_to File.basename(file), "/browser/?folder=" + file %></b><br/>
+
+    app/views/browser/index.html.erb:7:in `dirname'
+    app/views/browser/index.html.erb:7
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:20:53) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:21:33) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:21:33) [GET]
+Rendering browser/index
+
+ActionView::TemplateError (can't convert nil into String) on line #16 of app/views/browser/index.html.erb:
+13:   <% end %>
+14: <% end %>
+15: 
+16:   <%= link_to "Up", "/browser/?folder=#{File.dirname(File.dirname(params[:folder]))}" %>
+17: <br/>
+18: <hr/>
+19: <form action="/browser/new_file">
+
+    app/views/browser/index.html.erb:16:in `dirname'
+    app/views/browser/index.html.erb:16
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:21:33) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:21:43) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:21:43) [GET]
+Rendering browser/index
+Completed in 28ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:21:43) [GET]
+Rendering editor/welcome
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:21:48) [GET]
+  Parameters: {"folder"=>""}
+Rendering browser/index
+Completed in 27ms (View: 9, DB: 0) | 200 OK [http://localhost/browser/?folder=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:21:58) [GET]
+  Parameters: {"folder"=>"/Applications"}
+Rendering browser/index
+Completed in 44ms (View: 26, DB: 0) | 200 OK [http://localhost/browser/?folder=/Applications]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:22:05) [GET]
+  Parameters: {"folder"=>"/"}
+Rendering browser/index
+Completed in 27ms (View: 9, DB: 0) | 200 OK [http://localhost/browser/?folder=/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:22:10) [GET]
+  Parameters: {"folder"=>"//Applications"}
+Rendering browser/index
+Completed in 43ms (View: 26, DB: 0) | 200 OK [http://localhost/browser/?folder=//Applications]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:22:14) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:22:14) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:22:14) [GET]
+Rendering browser/index
+Completed in 21ms (View: 4, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:23:19) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:23:19) [GET]
+
+NameError (undefined local variable or method `folder' for #<BrowserController:0x23e171c>):
+  app/controllers/browser_controller.rb:8:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:23:19) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:23:35) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:23:35) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:23:36) [GET]
+Rendering browser/index
+Completed in 27ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:23:44) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel"}
+Rendering browser/index
+Completed in 51ms (View: 33, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:25:23) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:25:23) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:25:23) [GET]
+Rendering browser/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:25:25) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/app"}
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/app]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:25:26) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/app/controllers"}
+Rendering browser/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/app/controllers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:25:27) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/app/controllers/application_controller.rb"}
+Rendering editor/index
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/app/controllers/application_controller.rb]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:25:30) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/app/controllers/browser_controller.rb"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/app/controllers/browser_controller.rb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:28:27) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:28:27) [GET]
+Rendering browser/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:28:28) [GET]
+Rendering editor/welcome
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:28:36) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/config"}
+Rendering browser/index
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/config]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:28:37) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/config/database.yml"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/config/database.yml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:31:50) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/config/environments"}
+Rendering browser/index
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/config/environments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:31:51) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/config/environments/development.rb"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/config/environments/development.rb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:31:53) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/config/environments/production.rb"}
+Rendering editor/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/config/environments/production.rb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:31:54) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie"}
+Rendering browser/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:32:11) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 75ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:32:11) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:32:11) [GET]
+Rendering browser/index
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:33:15) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:33:15) [GET]
+Rendering browser/index
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:33:15) [GET]
+Rendering editor/welcome
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:33:16) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:33:17) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:33:17) [GET]
+Rendering browser/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:33:18) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:33:18) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:33:18) [GET]
+Rendering browser/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:33:25) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:33:25) [GET]
+Rendering browser/index
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:33:25) [GET]
+Rendering editor/welcome
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:33:33) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:33:33) [GET]
+Rendering editor/welcome
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:33:33) [GET]
+Rendering browser/index
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:33:42) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:33:43) [GET]
+Rendering editor/welcome
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:33:43) [GET]
+Rendering browser/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:35:48) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:35:48) [GET]
+Rendering browser/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:35:48) [GET]
+Rendering editor/welcome
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MainController#index (for ::1 at 2009-06-14 22:35:57) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/main]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:35:57) [GET]
+Rendering browser/index
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:35:57) [GET]
+Rendering editor/welcome
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/editor]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:36:03) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel"}
+Rendering browser/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:36:07) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos"}
+Rendering browser/index
+Completed in 15ms (View: 6, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:36:53) [GET]
+  Parameters: {"folder"=>"/Users"}
+Rendering browser/index
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:36:55) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel"}
+Rendering browser/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:36:57) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/Applications"}
+Rendering browser/index
+Completed in 44ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/Applications]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:37:00) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel"}
+Rendering browser/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:37:04) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos"}
+Rendering browser/index
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:37:05) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie"}
+Rendering browser/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:37:07) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos"}
+Rendering browser/index
+Completed in 15ms (View: 6, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:37:09) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie"}
+Rendering browser/index
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:37:10) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/Rakefile"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/Rakefile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:37:59) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/public"}
+Rendering browser/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/public]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:38:01) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/public/500.html"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/public/500.html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:38:03) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/public/422.html"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/public/422.html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:05) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie"}
+Rendering browser/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:08) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/script"}
+Rendering browser/index
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/script]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:38:09) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/script/generate"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/script/generate]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:38:15) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/script/destroy"}
+Rendering editor/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/script/destroy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:18) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/script/performance"}
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/script/performance]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:20) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie/script"}
+Rendering browser/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie/script]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:21) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/fedie"}
+Rendering browser/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/fedie]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:22) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos"}
+Rendering browser/index
+Completed in 15ms (View: 6, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:23) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel"}
+Rendering browser/index
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:24) [GET]
+  Parameters: {"folder"=>"/Users"}
+Rendering browser/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:24) [GET]
+  Parameters: {"folder"=>"/"}
+Rendering browser/index
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/browser/?folder=/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:38) [GET]
+  Parameters: {"folder"=>"//Users"}
+Rendering browser/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/browser/?folder=//Users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:41) [GET]
+  Parameters: {"folder"=>"//Users/gabrielengel"}
+Rendering browser/index
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/browser/?folder=//Users/gabrielengel]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:38:46) [GET]
+  Parameters: {"folder"=>"//Users/gabrielengel/outrosprojetos"}
+Rendering browser/index
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/browser/?folder=//Users/gabrielengel/outrosprojetos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:39:05) [GET]
+  Parameters: {"folder"=>"//Users/gabrielengel/outrosprojetos/realize"}
+Rendering browser/index
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/browser/?folder=//Users/gabrielengel/outrosprojetos/realize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:39:06) [GET]
+  Parameters: {"file"=>"//Users/gabrielengel/outrosprojetos/realize/dumpeee.sql"}
+Rendering editor/index
+Completed in 26ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=//Users/gabrielengel/outrosprojetos/realize/dumpeee.sql]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:42:18) [GET]
+  Parameters: {"folder"=>"//Users/gabrielengel/outrosprojetos/realize/db"}
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=//Users/gabrielengel/outrosprojetos/realize/db]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:42:19) [GET]
+  Parameters: {"file"=>"//Users/gabrielengel/outrosprojetos/realize/db/schema.rb"}
+Rendering editor/index
+Completed in 29ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=//Users/gabrielengel/outrosprojetos/realize/db/schema.rb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:43:41) [GET]
+  Parameters: {"folder"=>"//Users/gabrielengel/outrosprojetos/realize/db/migrate"}
+Rendering browser/index
+Completed in 36ms (View: 27, DB: 0) | 200 OK [http://localhost/browser/?folder=//Users/gabrielengel/outrosprojetos/realize/db/migrate]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:43:43) [GET]
+  Parameters: {"file"=>"//Users/gabrielengel/outrosprojetos/realize/db/migrate/001_create_usuarios.rb"}
+Rendering editor/index
+Completed in 36ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=//Users/gabrielengel/outrosprojetos/realize/db/migrate/001_create_usuarios.rb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:43:45) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/realize/db"}
+Rendering browser/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/realize/db]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:43:46) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/realize"}
+Rendering browser/index
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/realize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:44:15) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/realize/script"}
+Rendering browser/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/realize/script]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:44:17) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/realize/script/generate"}
+Rendering editor/index
+Completed in 30ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/realize/script/generate]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:44:24) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos/realize"}
+Rendering browser/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos/realize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:44:25) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/outrosprojetos"}
+Rendering browser/index
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/outrosprojetos]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:44:26) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel"}
+Rendering browser/index
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:44:31) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/dumpeee.sql"}
+Rendering editor/index
+Completed in 32ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/dumpeee.sql]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:45:04) [GET]
+  Parameters: {"folder"=>"/Users/gabrielengel/Desktop"}
+Rendering browser/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/browser/?folder=/Users/gabrielengel/Desktop]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#new_file (for ::1 at 2009-06-14 22:45:11) [GET]
+  Parameters: {"file_name"=>"teste.erb"}
+Redirected to http://localhost:3002/browser
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/browser/new_file?file_name=teste.erb]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:45:11) [GET]
+Rendering browser/index
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:45:14) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/teste.erb"}
+Rendering editor/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/editor/?file=/Users/gabrielengel/outrosprojetos/fedie/teste.erb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#save_file (for ::1 at 2009-06-14 22:45:24) [GET]
+  Parameters: {"file_name"=>"/Users/gabrielengel/outrosprojetos/fedie/teste.erb", "file"=>"\r\nDivertidoo :)"}
+
+Divertidoo :)
+Redirected to http://localhost:3002/editor?file=%2FUsers%2Fgabrielengel%2Foutrosprojetos%2Ffedie%2Fteste.erb
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/editor/save_file?file_name=%2FUsers%2Fgabrielengel%2Foutrosprojetos%2Ffedie%2Fteste.erb&file=%0D%0ADivertidoo+%3A%29]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EditorController#index (for ::1 at 2009-06-14 22:45:24) [GET]
+  Parameters: {"file"=>"/Users/gabrielengel/outrosprojetos/fedie/teste.erb"}
+Rendering editor/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/editor?file=%2FUsers%2Fgabrielengel%2Foutrosprojetos%2Ffedie%2Fteste.erb]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#new_folder (for ::1 at 2009-06-14 22:45:42) [GET]
+  Parameters: {"folder_name"=>"testeeee"}
+Redirected to http://localhost:3002/browser
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/browser/new_folder?folder_name=testeeee]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing BrowserController#index (for ::1 at 2009-06-14 22:45:42) [GET]
+Rendering browser/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/browser]
