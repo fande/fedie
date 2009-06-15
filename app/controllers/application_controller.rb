@@ -3,8 +3,15 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  #protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  before_filter :secret_access
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  def secret_access
+    if ! session[:secret_access]
+      redirect_to :controller => :secret, :action => :index
+    end
+  end
+  
 end
