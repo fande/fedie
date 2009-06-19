@@ -1,12 +1,13 @@
+<%= stylesheet_link_tag 'browser' %>
 
 <span style="font-size:60%"><%= @folder %></span>
 <h1>Arquivos</h1>
     <b><%= link_to image_tag("icons/folder.png") + "..", "/browser/?folder=#{File.dirname(@folder)}" %></b><br/>
-<% for file in @files %>
+<% for file in @files.sort %>
   <% if File.directory? file %>
-    <b><%= link_to image_tag("icons/folder.png") + File.basename(file), "/browser/?folder=" + file %></b><br/>
+    <b><%= link_to image_tag("icons/folder.png") + File.basename(file), "/browser/?folder=" +file %></b><br/>
   <% else %>
-    <%= link_to image_tag("icons/file.png") + File.basename(file), "/editor/?file=" + file, :target => "editor" %><br/>
+    <%= link_to image_tag("icons/file.png") + File.basename(file), "/editor/?file=" + file,:target => "editor" %><br/>
   <% end %>
 <% end %>
 
@@ -21,3 +22,4 @@
   <input type="submit" value="Ok">
 </form>
 Enviar Arquivo<br/>
+

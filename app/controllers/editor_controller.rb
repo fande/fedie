@@ -13,6 +13,7 @@ class EditorController < ApplicationController
             logger.debug(params[:file].to_s)
       if ! (params[:file].length < 1)
         @file = File.open(params[:file_name], File::TRUNC|File::WRONLY|File::CREAT, 0666){ |f| f.write(params[:file].to_s) }
+        flash[:success] = "Atualizações salvas com sucesso"
       else
         flash[:notice] = "Nao salvou direito"
       end

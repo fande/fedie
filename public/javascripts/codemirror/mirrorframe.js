@@ -19,12 +19,13 @@ function MirrorFrame(place, options) {
     button.onclick = function(){self[action].call(self);};
   }
 
-  makeButton("Search", "search");
-  makeButton("Replace", "replace");
-  makeButton("Current line", "line");
-  makeButton("Jump to line", "jump");
-  makeButton("Insert constructor", "macro");
-  makeButton("Indent all", "reindent");
+  //makeButton("Search", "search");
+  //makeButton("Replace", "replace");
+  //makeButton("Current line", "line");
+  //makeButton("Jump to line", "jump");
+  //makeButton("Insert constructor", "macro");
+  //makeButton("Indent all", "reindent");
+  //makeButton("Save", "save");
 
   this.mirror = new CodeMirror(this.home, options);
 }
@@ -67,6 +68,10 @@ MirrorFrame.prototype = {
   line: function() {
     alert("The cursor is currently at line " + this.mirror.currentLine());
     this.mirror.focus();
+  },
+  
+  save: function() {
+    this.mirror.getCode()
   },
 
   macro: function() {

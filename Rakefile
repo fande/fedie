@@ -9,7 +9,6 @@ require 'rake/rdoctask'
 
 require 'tasks/rails'
 
-teste
-emais
+
 
 

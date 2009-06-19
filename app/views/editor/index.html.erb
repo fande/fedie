@@ -1,19 +1,49 @@
 	<%= javascript_include_tag "compressed_form" %>
-	<%= javascript_include_tag "codemirror/codemirror" %>
-	<%= javascript_include_tag "codemirror/mirrorframe" %>
-	<%= stylesheet_link_tag 'codemirror/docs' %>
+	<%= javascript_include_tag "codemirror/codemirror.js" %>
+	<%= javascript_include_tag "codemirror/mirrorframe.js" %>
+	<%= stylesheet_link_tag 'codemirror/docs.css' %>
 <SCRIPT>
-  mobwrite.syncGateway = 'http://mobwrite3.appspot.com/scripts/q.py';
+  mobwrite.syncGateway = 'http://mobwrite3.appspot.com/scripts/q.py'
+
 </SCRIPT>
-<BODY ONLOAD="mobwrite.share('<%= params[:file] %>');">
+<BODY > 
 <h1>Editando arquivo: <i><%= params[:file] %></i></h1>
-<%= flash[:notice] %><br/>
-<form action="/editor/save_file">
+
+<% if flash[:success] %>
+<div style="padding: 10px; background: #cfc;"><%= flash[:success] %></div>
+<% end %>
+
+<% if flash[:notice] %>
+<div style="padding: 10px; background: #fcc;"><%= flash[:notice] %></div>
+<% end %>
+<form action="/editor/save_file" method="post" id="editor_form">
 <input type="hidden" name="file_name" id="file_name" value="<%= params[:file] %>" />
-<textarea id="<%= params[:file] %>" name="file" style="width: 800px; height: 400px">
+<div style="border: thin solid #999">
+<textarea id="<%= params[:file] %>" name="file_code" style="width: 100%; height: 500px">
 <%= @file %>
 </textarea>
+</div>
+<textarea style="display:none" name="file" id="source"></textarea>
 <br/>
-<input type="submit" value="Salvar Alterações">
+<input onclick="javascript:salvar()" type="button" value="Salvar Alterações">
 </form>
 
+<script type="text/javascript">
+  var textarea = document.getElementById('<%= params[:file] %>');
+  var editor = new MirrorFrame(CodeMirror.replace(textarea), {
+    height: "400px",
+    content: textarea.value,
+    parserfile: ["tokenizejavascript.js", "parsejavascript.js"],
+    stylesheet: "/stylesheets/codemirror/jscolors.css",
+    path: "/javascripts/codemirror/",
+    autoMatchParens: true
+  });
+  
+  function salvar(){
+    source = document.getElementById('source')
+    source.value = editor.mirror.getCode()
+    
+    form = document.getElementById('editor_form')
+    form.submit()
+  }
+</script>
